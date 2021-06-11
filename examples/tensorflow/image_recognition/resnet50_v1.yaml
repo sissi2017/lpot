@@ -24,7 +24,7 @@ quantization:                                        # optional. tuning constrai
       batch_size: 10
       dataset:
         ImageRecord:
-          root: /path/to/calibration/dataset         # NOTE: modify to calibration dataset location if needed
+          root: /home2/changwa1/sig/LowPrecisionInferenceTool/examples/tensorflow/image_recognition/sub_imagenet        # NOTE: modify to calibration dataset location if needed
       transform:
         ResizeCropImagenet: 
           height: 224
@@ -41,7 +41,7 @@ evaluation:                                          # optional. required if use
       batch_size: 32
       dataset:
         ImageRecord:
-          root: /path/to/evaluation/dataset          # NOTE: modify to evaluation dataset location if needed
+          root: /home2/changwa1/sig/LowPrecisionInferenceTool/examples/tensorflow/image_recognition/sub_imagenet          # NOTE: modify to evaluation dataset location if needed
       transform:
         ResizeCropImagenet: 
           height: 224
@@ -55,7 +55,7 @@ evaluation:                                          # optional. required if use
       batch_size: 1
       dataset:
         ImageRecord:
-          root: /path/to/evaluation/dataset          # NOTE: modify to evaluation dataset location if needed
+          root: /home2/changwa1/sig/LowPrecisionInferenceTool/examples/tensorflow/image_recognition/sub_imagenet          # NOTE: modify to evaluation dataset location if needed
       transform:
         BilinearImagenet:
           height: 224
